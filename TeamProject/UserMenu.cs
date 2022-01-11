@@ -58,7 +58,7 @@ namespace TeamProject
             }
             else
             {
-                User user = new User(name);
+                User user = new User();
                 db.Users.Add(user);
                 db.SaveChanges();
                 Console.WriteLine("User has been added!");
@@ -73,7 +73,7 @@ namespace TeamProject
                 Console.WriteLine(user);
             }
         }
-        static void userUpdate(FlightManagerContext db)
+        static void UserUpdate(FlightManagerContext db)
         {
             UserRead(db);
             Console.Write("Select a User: ");

@@ -11,13 +11,37 @@ namespace TeamProject
     {
         [Key, Required]
         public int Id { get; set; }
-        
         [Required]
-        public string Flight { get; set; }
-        [Required]
-        public virtual User User { get; set; }
-        [Required]
-        public virtual List<Flight> Flights{ get; set; }
+        public string Name { get; set; }
+
+        public string LocationFrom { get; set; }
+        public string LocationTo { get; set; }
+
+        public int DateTimeFrom { get; set; }
+        public int DateTimeTo { get; set; }
+        public int Capacity { get; set; }
+        public virtual List<Flight> Flights { get; set; }
+
+        public Reservation(int id, string name, string locationFrom, string locationTo, int dateTimeFrom, int dateTimeTo, int capacity)
+        {
+
+            Id = id;
+            Name = name;
+            LocationFrom = locationFrom;
+            LocationTo = locationTo;
+            DateTimeFrom = dateTimeFrom;
+            DateTimeTo = dateTimeTo;
+            Capacity = capacity;
+        }
+        public Reservation()
+        { }
+
+
+
+
+
+
+
 
 
         //public object Transport { get;  set; }
@@ -34,7 +58,7 @@ namespace TeamProject
 
 
         //}
-       
+
 
 
 
