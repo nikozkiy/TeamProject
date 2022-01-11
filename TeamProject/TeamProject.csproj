@@ -58,6 +58,12 @@
   <ItemGroup>
     <Compile Include="Flight.cs" />
     <Compile Include="FlightManagerContext.cs" />
+    <Compile Include="FlightManagerInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlightManagerInterface.Designer.cs">
+      <DependentUpon>FlightManagerInterface.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
