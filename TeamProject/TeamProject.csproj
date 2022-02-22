@@ -64,6 +64,7 @@
     <Compile Include="FlightManagerInterface.Designer.cs">
       <DependentUpon>FlightManagerInterface.cs</DependentUpon>
     </Compile>
+    <Compile Include="FlightMenu.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
